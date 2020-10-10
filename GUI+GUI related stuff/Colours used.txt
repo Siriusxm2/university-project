@@ -1,0 +1,7 @@
+ #373b66 - Main Blue
+
+ #7e87ed - Buttons
+
+ #b2b0b0 - Text
+
+ #2b2e4f - Dark Blue
