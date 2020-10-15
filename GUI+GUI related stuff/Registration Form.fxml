@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="103.0" fitWidth="101.0" layoutX="507.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../GUI%20HELP/828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
+            <Image url="@828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
          </image>
       </ImageView>
       <Label layoutX="50.0" layoutY="14.0" text="Registration form" textFill="WHITE">
