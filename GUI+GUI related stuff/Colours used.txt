@@ -2,6 +2,8 @@
 
  #7e87ed - Buttons
 
- #b2b0b0 - Text
+ #b2b0b0 - Text gray
+
+ #e8e8e8 - Text white
 
  #2b2e4f - Dark Blue
