@@ -16,7 +16,7 @@
       </Label>
       <ImageView fitHeight="233.0" fitWidth="257.0" layoutX="35.0" layoutY="84.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
+            <Image url="@IMG+ICONS/828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
          </image>
       </ImageView>
       <Label layoutX="24.0" layoutY="84.0" text="EMAIL:" textFill="#b2b0b0">
