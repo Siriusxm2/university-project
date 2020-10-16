@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+          http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+  version="2.2">
+
+  <!-- Define a name used to get an entity manager. Define that you will
+  complete transactions with the DB  -->
+  <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
+
+    <!-- Define the class for Hibernate which implements JPA -->
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+    <!-- Define the object that should be persisted in the database -->
+    <class>com.jpaTEST.templates.Warehouse</class>
+
+    <properties>
+      <!-- Driver for DB database -->
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+
+      <!-- URL for DB -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1:3306/oop_project" />
+
+      <!-- Username -->
+      <property name="javax.persistence.jdbc.user" value="Pavel" />
+
+      <!-- Password -->
+      <property name="javax.persistence.jdbc.password" value="112123" />
+
+
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+      <property name="show_sql" value="true"/>
+      <property name="hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>
