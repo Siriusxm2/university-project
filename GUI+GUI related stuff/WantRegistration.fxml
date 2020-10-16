@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #373b66;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="67.0" layoutY="17.0" text="FOR REGISTRATION" textAlignment="CENTER" textFill="WHITE">
@@ -17,7 +16,7 @@
       </Label>
       <ImageView fitHeight="233.0" fitWidth="257.0" layoutX="35.0" layoutY="84.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
+            <Image url="@IMG+ICONS/828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
          </image>
       </ImageView>
       <Label layoutX="24.0" layoutY="84.0" text="EMAIL:" textFill="#b2b0b0">
