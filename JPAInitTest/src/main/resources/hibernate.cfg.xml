@@ -23,5 +23,10 @@
     <property name="hbm2ddl.auto"> update </property>
 
     <mapping class="com.jpaTEST.templates.Warehouse"/>
+    <mapping class="com.jpaTEST.templates.Agent"/>
+    <mapping class="com.jpaTEST.templates.Client"/>
+    <mapping class="com.jpaTEST.templates.Owner"/>
+    <mapping class="com.jpaTEST.templates.Category"/>
+    <mapping class="com.jpaTEST.templates.Location"/>
   </session-factory>
 </hibernate-configuration>

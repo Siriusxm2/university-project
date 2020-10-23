@@ -15,6 +15,11 @@
 
     <!-- Define the object that should be persisted in the database -->
     <class>com.jpaTEST.templates.Warehouse</class>
+    <class>com.jpaTEST.templates.Agent</class>
+    <class>com.jpaTEST.templates.Location</class>
+    <class>com.jpaTEST.templates.Category</class>
+    <class>com.jpaTEST.templates.Owner</class>
+    <class>com.jpaTEST.templates.Client</class>
 
     <properties>
       <!-- Driver for DB database -->

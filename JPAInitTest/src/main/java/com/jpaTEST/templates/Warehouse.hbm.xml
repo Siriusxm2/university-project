@@ -16,9 +16,9 @@
 
     <property name = "size" column = "SIZE" type = "double"/>
     <property name = "conditions" column = "CONDITIONS" type = "string"/>
-    <property name = "categories" column = "Categories_ID" type = "int"/>
+    <property name = "categories" column = "Categories_ID" type = "Category"/>
     <property name = "prStored" column = "PRODUCT_STORED" type = "string"/>
-    <property name = "location" column = "Locations_ID" type = "int"/>
+    <property name = "location" column = "Locations_ID" type = "Location"/>
     <property name = "occupied" column = "OCCUPIED" type = "int"/>
 
   </class>

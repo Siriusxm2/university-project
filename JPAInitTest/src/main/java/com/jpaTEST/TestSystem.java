@@ -19,7 +19,7 @@ public class TestSystem {
     //addWarehouse(6, 125.35, "Poor", 2, "Water", 3, 0);
     listWarehousesByOccupation();
   }
-
+  /*
   public static void addWarehouse(int id, double size, String conditions, int category, String prStored, int location, int occupied){
     EntityManager em = EMF.createEntityManager();
       em.getTransaction().begin();
@@ -28,7 +28,7 @@ public class TestSystem {
       whs.setId(id);
       whs.setSize(size);
       whs.setConditions(conditions);
-      whs.setCategory(category);
+      whs.setWhsCategory(category);
       whs.setPrStored(prStored);
       whs.setLocation(location);
       whs.setOccupied(occupied);
@@ -37,6 +37,7 @@ public class TestSystem {
       em.getTransaction().commit();
       em.close();
   }
+  */
 
   public static void listWarehousesByOccupation(){
     EntityManager em = EMF.createEntityManager();
