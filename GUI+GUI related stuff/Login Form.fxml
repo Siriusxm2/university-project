@@ -39,7 +39,7 @@
       </Label>
       <HBox layoutX="314.0" layoutY="126.0" prefHeight="40.0" prefWidth="360.0" style="-fx-background-color: #2b2e4f; -fx-border-color: #000000; -fx-background-radius: 5px; -fx-border-radius: 5px;">
          <children>
-            <TextField id="email" prefHeight="26.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-text-fill: b2b0b0;" HBox.hgrow="ALWAYS">
+            <TextField id="email" fx:id="emailTextField" prefHeight="26.0" prefWidth="354.0" style="-fx-background-color: transparent; -fx-text-fill: b2b0b0;" HBox.hgrow="ALWAYS">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
@@ -48,20 +48,20 @@
       </HBox>
       <HBox layoutX="314.0" layoutY="201.0" prefHeight="39.0" prefWidth="359.0" style="-fx-background-color: #2b2e4f; -fx-border-color: #000000; -fx-background-radius: 5px; -fx-border-radius: 5px;">
          <children>
-            <PasswordField prefHeight="40.0" prefWidth="360.0" style="-fx-background-color: transparent; -fx-text-fill: b2b0b0;">
+            <PasswordField fx:id="PasswordField" prefHeight="40.0" prefWidth="360.0" style="-fx-background-color: transparent; -fx-text-fill: b2b0b0;">
                <font>
                   <Font size="16.0" />
                </font>
             </PasswordField>
          </children>
       </HBox>
-      <Button layoutX="314.0" layoutY="305.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="360.0" style="-fx-border-radius: 5px; -fx-background-color: #7e87ed; -fx-background-radius: 5px;" text="Login" textFill="WHITE">
+      <Button fx:id="loginButton" layoutX="314.0" layoutY="305.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="360.0" style="-fx-border-radius: 5px; -fx-background-color: #7e87ed; -fx-background-radius: 5px;" text="Login" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="310.0" layoutY="241.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Forgot your password?" textFill="#7e87ed" />
+      <Button fx:id="forgotButton" layoutX="310.0" layoutY="241.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Forgot your password?" textFill="#7e87ed" />
       <Label layoutX="320.0" layoutY="349.0" text="New user?" textFill="#b2b0b0" />
-      <Button layoutX="370.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Register" textFill="#7e87ed" />
+      <Button fx:id="registerButton" layoutX="370.0" layoutY="345.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Register" textFill="#7e87ed" />
    </children>
 </AnchorPane>
