@@ -1,19 +1,26 @@
 package com.jpaTEST.templates;
 
+
 public abstract class User {
+
   public enum Roles{
     Admin, Owner, Agent
   };
 
-  public String username;
+  public String email;
   public char password;
 
-  public String getUsername() {
-    return this.username;
+  public User(String email, char password) {
+    this.email = email;
+    this.password = password;
   }
 
-  public void setUsername(String username) {
-    this.username = username;
+  public String getEmail() {
+    return this.email;
+  }
+
+  public void setEmail(String username) {
+    this.email = username;
   }
 
   public char getPassword() {

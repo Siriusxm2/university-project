@@ -1,23 +1,43 @@
 package com.jpaTEST;
 
+// HIBERNATE
 import com.jpaTEST.templates.Warehouse;
+import java.io.File;
+import java.lang.ModuleLayer.Controller;
+import java.net.URL;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
+// Java FX
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.TextArea;
+import javafx.stage.StageStyle;
 
-public class TestSystem {
 
-  private final static EntityManagerFactory EMF = Persistence.createEntityManagerFactory("pu");
+public class TestSystem extends Application{
 
+  private static final EntityManagerFactory EMF = Persistence.createEntityManagerFactory("pu");
+
+  @Override
+  public void start(Stage stage) throws Exception{
+      Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("LoginForm.fxml"));
+      System.out.println("s");
+      stage.initStyle(StageStyle.UNDECORATED);
+      stage.setScene(new Scene(root, 740, 400));
+      stage.show();
+  }
 
   public static void main(String[] args) {
-
+    Application.launch(args);
     //addWarehouse(5, 325, "Good", 3, "Food", 4, 1);
     //addWarehouse(6, 125.35, "Poor", 2, "Water", 3, 0);
-    listWarehousesByOccupation();
+    //listWarehousesByOccupation();
   }
   /*
   public static void addWarehouse(int id, double size, String conditions, int category, String prStored, int location, int occupied){
@@ -39,14 +59,15 @@ public class TestSystem {
   }
   */
 
-  public static void listWarehousesByOccupation(){
+  public static void listWarehousesByOccupation(TextArea ta){
     EntityManager em = EMF.createEntityManager();
     em.getTransaction().begin();
 
     Query q = em.createQuery("FROM Warehouse w WHERE w.occupied = 0", Warehouse.class);
     List<Warehouse> result = q.getResultList();
     for (Warehouse wh : result){
-      System.out.println(wh.toString());
+      ta.appendText(wh.toString() + "\n");
+      //System.out.println(wh.toString());
     }
     em.getTransaction().commit();
     em.close();

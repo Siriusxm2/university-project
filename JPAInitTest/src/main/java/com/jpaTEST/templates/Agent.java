@@ -43,6 +43,8 @@ public class Agent implements Serializable {
   @Column(name = "SALARY", nullable = false)
   private int salary;
 
+
+
   public int getAgentId() {
     return this.id;
   }

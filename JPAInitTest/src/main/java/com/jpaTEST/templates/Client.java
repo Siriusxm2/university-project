@@ -30,10 +30,7 @@ public class Client extends User implements Serializable {
   private String lName;
 
   @Column(name = "EMAIL", nullable = false, unique = true)
-  private String email;
-
-  @Column(name = "USERNAME", nullable = false, unique = true)
-  private String username = getUsername();
+  private String email = getEmail();
 
   @Column(name = "PASSWORD", nullable = false)
   private char password = getPassword();
@@ -49,6 +46,21 @@ public class Client extends User implements Serializable {
 
   @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Owner.class, mappedBy = "clientOwners")
   private List<Owner> owner;
+
+  public Client(String email, char password) {
+    super(email, password);
+  }
+
+  public Client(String email, char password, String fName, String lName, String email1,
+      char password1, String phone, Roles role) {
+    super(email, password);
+    this.fName = fName;
+    this.lName = lName;
+    this.email = email1;
+    this.password = password1;
+    this.phone = phone;
+    this.role = role;
+  }
 
   public int getId() {
     return this.id;
@@ -74,20 +86,12 @@ public class Client extends User implements Serializable {
     this.lName = lName;
   }
 
-  public String getEmail() {
+  public String getClientEmail() {
     return this.email;
   }
 
   public void setEmail(String email) {
     this.email = email;
-  }
-
-  public void setUsername(String uname){
-    this.username = uname;
-  }
-
-  public String getClientUsername() {
-    return this.username;
   }
 
   public void setPassword(char pword){

@@ -125,14 +125,15 @@ public class Warehouse {
 
   @Override
   public String toString() {
-    return "Warehouse{" +
-        "id=" + this.id +
-        ", size=" + this.size +
-        ", conditions='" + this.conditions + '\'' +
-        ", whsCategory=" + whsCategory +
-        ", prStored='" + this.prStored + '\'' +
-        ", whsLocation=" + whsLocation +
-        ", occupied=" + this.occupied +
-        '}';
+    StringBuilder builder = new StringBuilder();
+    builder.append("id=").append(id)
+        .append(", Size=").append(size)
+        .append(", Conditions=").append(conditions)
+        .append(", Category=").append(whsCategory)
+        .append(", Product Stored=").append(prStored)
+        .append(", Location=").append(whsLocation)
+        .append(", Occupied=").append(occupied);
+
+    return builder.toString();
   }
 }

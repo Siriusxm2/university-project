@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #373b66;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jpaTEST.javaFX.WantRegistrationController">
+   <children>
+      <Label layoutX="67.0" layoutY="17.0" text="FOR REGISTRATION" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="233.0" fitWidth="257.0" layoutX="35.0" layoutY="84.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../java/com/jpaTEST/javaFX/imgIcons/828ea1bd-3b83-488f-bcd6-52d5c760c90f_200x200.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="24.0" layoutY="84.0" text="EMAIL:" textFill="#b2b0b0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="184.0" text="PHONE:" textFill="#b2b0b0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="109.0" text="registration@osf.com" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="135.0" text="customersupport@osf.com" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="209.0" text="+359 89 657 8159" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="236.0" text="+359 89 657 8160" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="OKButton" layoutX="28.0" layoutY="331.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#okOnAction" prefHeight="40.0" prefWidth="243.0" style="-fx-border-radius: 5px; -fx-background-color: #7e87ed; -fx-background-radius: 5px;" text="OK" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
